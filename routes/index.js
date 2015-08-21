@@ -9,4 +9,8 @@ router.get('/', function(req, res, next) {
   res.send('index :D');
 });
 
+router.get('/test', function(req, res, next) {
+  res.render('test', { title: 'Hey', message: 'Hello there!'});
+});
+
 module.exports = router;

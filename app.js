@@ -10,6 +10,7 @@ var routes = require('./routes/index');
 
 var app = express();
 
+app.set('view engine', 'jade');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
